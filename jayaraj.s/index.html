@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jayaraj</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <div class="bg">
+        <div class="content">
+            <img src="jayarajs.jpg" class="image">
+            <div class="about">
+                <h1 class="name">Jayaraj S</h1>
+                <div class="ms">
+                    <h2 class="ms1">I'm a <span id="words" style ="color:green">Web <br>developer</span> </h2>
+                    
+                    <p class="paragraph">I am a fellow student in college of engineering chenganuur.  I am currently studenting about web devolpement. </p>
+                    <a href="https://in.linkedin.com/in/jayaraj-s-620227240?trk=people-guest_people_search-card&original_referer=https%3A%2F%2Fwww.linkedin.com%2F">
+                        <button class="button">contact</button>
+                      </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function () {
+          var words = ["Web <br>developer","Ui/UX <br>Designer","Tech <br>enthusiast"],
+          i = 0;
+          setInterval(function(){ $('#words').fadeOut(0,function(){
+              $(this).html(words[(i = (i + 1) % words.length)]).fadeIn();
+            }); }, 3000)
+        })();
+      </script>
+</body>
+</html>
